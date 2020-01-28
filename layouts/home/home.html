@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+            the site head
+        -->
+    {{ partial "head/head.html" . }}
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/homepage.css">
+</head>
+
+<body>
+
+    <!-- 
+            Website Start 
+        -->
+
+        <!--- Demo content --->
+        <!--
+            {{ partial "comp/login-page.html" . }}
+    -->
+    
+    
+    
+    <div class="swiper-container body-scroller">
+        <div class="swiper-wrapper" style="height: auto;">
+            <div class="swiper-slide" style="height: auto;">
+                {{ partial "comp/top-nav.html" . }}
+                <div style="clear: both;"></div>
+                {{ partial "comp/header" . }}
+                {{ partial "comp/sessions-slider" . }}
+                
+               {{ partial "comp/footer.html" . }} 
+            </div>
+        </div>
+    </div>
+
+    {{ partial "comp/main-nav" . }}
+
+    <!--
+            Website End 
+        -->
+    {{ partial "scripts/script.html" . }}
+
+</body>
+
+</html>

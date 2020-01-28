@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="top-nav">
+        <h2 class="hello">
+            welcome back Mohamed
+        </h2>
+
+        <div class="search">
+
+            <input list="meditation-title" name="search" type="text" placeholder="Search By Session Title..">
+
+            <button><img src="{{.Site.BaseURL}}imges/search.svg"></button>
+
+            <datalist id="meditation-title">
+                {{ with .Site.GetPage "/sessions"}}
+                    {{ range .Pages }}
+                        <option value="{{.Params.slug}}">
+                    {{end}}
+                {{end}}
+            </datalist>
+
+        </div>
+    </div>
+</div>

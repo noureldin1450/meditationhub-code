@@ -1,0 +1,9 @@
+baseURL = "https://meditationhub.ga/"
+languageCode = "en-us"
+title = "meditation app"
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"

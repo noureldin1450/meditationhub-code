@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head/head.html" . }}
+</head>
+
+<body>
+    {{.Title}}
+    <br>
+    tags:
+    {{ range .Params.tags}}
+        <a href="/tags/{{. | urlize}}/">{{.}}</a>
+    {{end}}
+    <br>
+    author:<a href="/authors/{{.Params.authors}}">{{.Params.authors}}</a>
+    <br>
+    <br>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.Params.youtubeId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    
+    <p>
+        {{.Params.dis}}
+    </p>
+    
+
+</body>
+
+</html>
