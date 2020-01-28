@@ -1,0 +1,46 @@
+.top-nav{
+    text-align: center;
+    padding: 1rem 0px;   
+
+    .hello{
+        font-family: $extrafont;
+        text-transform: capitalize;
+        padding-bottom: .7rem;
+
+        @include small-mobile{
+            font-size: 1.3rem;
+        }
+    }
+    input,
+    button{
+        background: none;
+        border: none;
+        border-radius: 4px;
+    }
+    input{
+        padding: .5rem .2rem;
+        width: 75%;
+        background: $white-color;
+        float: left;
+        height: 18px;
+    }
+    button{
+        float: right;
+        width: 20%;
+        height: 34px;
+        background: $red-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            padding: .2rem;
+            width: 20%;
+
+            @include mobile{
+                width: 30%;
+            }
+        }
+    }
+}

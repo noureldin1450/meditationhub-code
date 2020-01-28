@@ -1,0 +1,37 @@
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+
+//WEBSITE FILES IMPORT
+
+//global fonts
+@import '../global/fonts';
+//Var
+@import '../helpers/var';
+//Animations
+@import '../helpers/animation';
+//RESPONSIVE
+@import '../helpers/responsive';
+//RESET
+@import '../helpers/reset';
+
+/*
+    /////////////////////
+         Home page styles
+    /////////////////////
+*/
+@import '../comp/main-nav';
+
+.meditation{
+    text-align: center;
+
+    h2{
+        padding: 3rem 0px .5rem 0px;
+    }
+}
+

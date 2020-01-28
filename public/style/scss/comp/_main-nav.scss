@@ -1,0 +1,43 @@
+.body-scroller {
+  height: 84vh;
+  overflow-y: auto;
+}
+
+.main-nav {
+  color: white;
+  width: 80%;
+  margin: auto;
+  //border: 2px solid;
+  height: 13vh;
+  z-index: 3;
+
+  @include small-mobile {
+    width: 90%;
+  }
+
+  ul {
+    text-align: center;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 0rem 0px;
+
+      &:nth-child(1) {
+        float: left;
+      }
+      &:nth-child(3) {
+        float: right;
+      }
+
+      img {
+        width: 100%;
+
+        @include small-mobile {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
