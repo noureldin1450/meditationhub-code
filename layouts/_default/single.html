@@ -3,27 +3,62 @@
 
 <head>
     {{ partial "head/head.html" . }}
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/single.css">
 </head>
 
 <body>
-    {{.Title}}
-    <br>
-    tags:
-    {{ range .Params.tags}}
-        <a href="/tags/{{. | urlize}}/">{{.}}</a>
-    {{end}}
-    <br>
-    author:<a href="/authors/{{.Params.authors}}">{{.Params.authors}}</a>
-    <br>
-    <br>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.Params.youtubeId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <br>
-    
-    <p>
-        {{.Params.dis}}
-    </p>
-    
+    <div class="swiper-container body-scroller">
+        <div class="swiper-wrapper" style="height: auto;">
+            <div class="swiper-slide" style="height: auto;">
+
+                <div class="single">
+                    <div class="container">
+                        <div class="top-nav">
+                            <img onclick="history.go(-1);" src="{{.Site.BaseURL}}imges/arrow-right.svg" alt="Back">
+                            <h2>your session is ready</h2>
+                        </div>
+                        
+                        <iframe src="https://www.youtube.com/embed/{{.Params.youtubeId}}"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                        <div class="tags">
+                            {{ range .Params.tags}}
+                                <a href="/tags/{{. | urlize}}/">#{{.}}</a>
+                            {{end}}
+                        </div>
+                        
+                        <h1 class="title"> {{.Title}} </h1>
+
+                        <div class="author">
+                            <h3>
+                                author:<a href="/authors/{{.Params.authors}}">{{.Params.authors}}</a>
+                            </h3>
+                        </div>
+                        
+                        <div class="dis">
+                            <p>
+                                {{.Params.dis}}
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                {{ partial "comp/related-slider" . }}
+
+                {{ partial "comp/footer.html" . }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial "comp/main-nav" . }}
+
+    <!--
+            Website End 
+        -->
+    {{ partial "scripts/script.html" . }}
 
 </body>
 
