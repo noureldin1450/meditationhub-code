@@ -6,8 +6,8 @@ slug: "7 Min Meditation to Start Your Day Yoga With Adriene"
 
 thumbnail: "https://i.ytimg.com/vi/k0PSUDvLi8E/hqdefault.jpg"
 time: "7:20"
-tags: ["Start Your Day","Guided Meditation"]
-authors: "adriene"
+tags: ["Start Your Day","Guided Meditation","7 min"]
+stars: ["adriene"]
 youtubeId: "k0PSUDvLi8E"
 
 dis: "

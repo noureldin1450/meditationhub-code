@@ -23,10 +23,7 @@
             });
         </script>              
         -->
-<script src="js/smothscrlling.js"></script>
 <!---Main JS Code -->
-<script src="js/main.js"></script>
-
 
 <!-- Swiper scrip -->
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -40,20 +37,20 @@
         // Optional parameters
         //direction: 'vertical',
         loop: false,
-        
+
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
     })
-    
-    
+
+
     var swiper = new Swiper('.sessions-slider', {
         slidesPerView: 1.3,
         spaceBetween: 25,
-        //freeMode: true,
+        freeMode: true,
         //loop: true,
-        
+
         breakpoints: {
             480: {
                 slidesPerView: 1.7,
@@ -65,6 +62,55 @@
             }
         }
     });
+
+
+    var emptystring = "";
+    
+    function search() {
+        var path = "{{.Site.BaseURL}}sessions/";
+        var meditationTitle = document.getElementById("meditationTitle").value;
+        var meditationTitle = meditationTitle.replace(/\s/g, '-');
+        var meditationTitle = meditationTitle.toLowerCase();
+        var url = path + meditationTitle;
+        //window.open(path+moveName);
+        if(meditationTitle == emptystring){
+            alert("Add some text to search");
+        }else{
+            window.location = url;
+        }
+    }
+
+    const loginPage = document.getElementById("login-page");
+    loginPage.style.display = 'none';
+
+    function myName(){
+        const nameVal = document.getElementById("userName").value;
+
+        if(nameVal == emptystring){
+            alert("Please Enter Your Name");
+        }else{
+            localStorage.setItem('userName', nameVal);
+        }
+    }
+
+    const userName_storage = localStorage.getItem("userName");
+    const hello = document.getElementById("hello");
+    const helloMsg = ` welcome back ${userName_storage}`;
+
+    const pageContent = document.getElementById("page-content");
+    const mainNav = document.getElementById("main-nav");
+    hello.innerHTML += helloMsg
+
+    if(userName_storage == null){
+        loginPage.style.display = 'block';
+        pageContent.style.display = 'none';
+        mainNav.style.display = 'none';
+    }else{
+        loginPage.style.display = 'none';
+        pageContent.style.display = 'block';
+        mainNav.style.display = 'block';
+    }
+
 
 
 

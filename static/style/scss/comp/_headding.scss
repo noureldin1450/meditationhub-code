@@ -1,0 +1,13 @@
+.top-nav {
+  padding: 2rem 0px 1rem 0px;
+
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: $extrafont;
+    font-size: 1.5rem;
+    @include mobile {
+      font-size: 1.3rem;
+    }
+  }
+}

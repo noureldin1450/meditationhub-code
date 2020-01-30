@@ -2,12 +2,12 @@
 draft: false 
 
 title: "Stepping into the NEW YEAR with CLARITY △ 8-Minute Guided Meditation"
-slug: "Stepping into the NEW YEAR with CLARITY 8-Minute Guided Meditation"
+slug: "Stepping into the NEW YEAR with CLARITY 8 Minute Guided Meditation"
 
 thumbnail: "https://i.ytimg.com/vi/ACwL9A-svt4/hqdefault.jpg"
 time: "8:27"
 tags: ["Clarity","Guided Meditation"]
-authors: "kristen martin"
+stars: ["kristen martin"]
 youtubeId: "ACwL9A-svt4"
 
 dis: "

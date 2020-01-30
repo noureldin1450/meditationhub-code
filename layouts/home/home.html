@@ -19,19 +19,18 @@
 
         <!--- Demo content --->
         <!--
-            {{ partial "comp/login-page.html" . }}
-    -->
-    
-    
-    
-    <div class="swiper-container body-scroller">
+        -->
+        
+    {{ partial "comp/login-page.html" . }}
+
+    <div class="swiper-container body-scroller" id="page-content">
         <div class="swiper-wrapper" style="height: auto;">
             <div class="swiper-slide" style="height: auto;">
                 {{ partial "comp/top-nav.html" . }}
                 <div style="clear: both;"></div>
                 {{ partial "comp/header" . }}
                 {{ partial "comp/sessions-slider" . }}
-                
+
                {{ partial "comp/footer.html" . }} 
             </div>
         </div>

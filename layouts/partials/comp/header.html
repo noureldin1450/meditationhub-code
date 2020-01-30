@@ -4,8 +4,8 @@
 
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                {{ with .Site.GetPage "/sessions" }}
-                    {{range .Pages }}
+                {{ with .Site.GetPage "/stars/adriene" }}
+                    {{range .Pages | first 3 }}
                     <div class="swiper-slide">
 
                         <div class="header-bg" style="background-image: url({{.Params.thumbnail}});">

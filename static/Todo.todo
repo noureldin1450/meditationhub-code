@@ -1,8 +1,28 @@
 
 #TO-DO
    [x]Make a design for single page 
-   [o]Code the single page
-      
-   [ ]add 10 new content
-   [ ]make the search working
-   [ ]make a slider with an author sesstions
+   [x]Code the single page
+      [x]fix the slider free speac on the end bugs
+      [x] make the back btn work 
+   [x]add 10 new content
+      [x]fix the thumbnail bug
+      [x]fix the author array bug
+
+   [x] make list page
+      [x] design it
+      [x] code it
+   
+   [x]make the search working
+
+   [x] make the login page work on the start and remember the user input
+      [x]make an alert for empty input for the name
+
+   [x]build setteings page
+      [x]add donation link
+      [x]add about me section
+      [x]add contact info
+      [x]add creator copyright page/ add or remove sessions
+
+
+   [ ]design better landing page
+    [ ] code it 

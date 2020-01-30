@@ -7,3 +7,6 @@ title = "meditation app"
   tag = "tags"
   category = "categories"
   author = "authors"
+  star = "stars"
+  
+Paginate = 20

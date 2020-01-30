@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    {{ partial "head/head.html" }}
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/list-page.css">
 </head>
+
 <body>
-    {{ range .Pages }}
-        <a href="{{.URL}}">{{.Title}}</a>
-    {{end}}   
+    <div class="swiper-container body-scroller">
+        <div class="swiper-wrapper" style="height: auto;">
+
+            <div class="list-page">
+                <div class="container">
+
+                    <div class="top-nav">
+                        {{ partial "comp/back-btn" . }}
+                        <h2> {{.Title}} sessions</h2>
+                    </div>
+
+                    <section>
+                        <ul class="paginate-list">
+                            {{ range .Paginator.Pages}}
+                            <li>
+                                <a href="{{.URL}}">
+                                    <div class="session-bg" style="background-image: url({{.Params.thumbnail}});">
+                                        <div class="overlay">
+                                            <div class="time">
+                                                {{.Params.time}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>{{.Params.Title}}</h3>
+                                </a>
+                            </li>
+                            {{end}}
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+
+            {{ partial "comp/paginator.html" .}}
+            {{ partial "comp/footer.html" . }}
+        </div>
+    </div>
+    </div>
+
+    {{ partial "comp/main-nav" . }}
+    {{ partial "scripts/script.html" . }}
+
 </body>
+
 </html>
