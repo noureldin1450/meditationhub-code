@@ -15,8 +15,18 @@
 
                 <div class="container">
                     <div class="meditation">
-                        <h2> Meditation </h2>
-                        <p> comming soon page... </p>
+                        
+                        <div class="top-nav">
+                            {{ partial "comp/back-btn"  . }}
+                            <h2> Meditation </h2>
+                        </div>
+
+                        <div class="player" style="background: url(https://4.bp.blogspot.com/-SD4zFuoXvD8/T3hWgvInjCI/AAAAAAAAAEI/sEuPy4qLEHQ/s1600/20060408rainonwindow.jpg);">
+                            <div class="overlay">
+                                <button onclick="play()"><img id="btn-play" src=""></button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -24,8 +34,28 @@
         </div>
     </div>
 
-    {{ partial "comp/main-nav" . }}
+    {{ partial "comp/main-nav.html" . }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<script>
+        
+        const song = new Audio();
+
+        song.src = "https://rainymood.com/audio1110/0.m4a";
+        
+        $("#btn-play").attr("src","/imges/play-white.svg");
+        
+        function play(){
+            if(song.paused){
+                song.play();
+                $("#btn-play").attr("src","/imges/pause.svg");
+            }else if(song.play){
+                song.pause();
+                $("#btn-play").attr("src","/imges/play-white.svg");
+            }
+        }
+
+    </script>
 
 </body>
 
