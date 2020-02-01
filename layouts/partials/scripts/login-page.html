@@ -1,0 +1,34 @@
+<script>
+
+    const loginPage = document.getElementById("login-page");
+    loginPage.style.display = 'none';
+    var emptystring = "";
+
+    function myName() {
+        const nameVal = document.getElementById("userName").value;
+
+        if (nameVal == emptystring) {
+            alert("Please Enter Your Name");
+        } else {
+            localStorage.setItem('userName', nameVal);
+        }
+    }
+
+    const userName_storage = localStorage.getItem("userName");
+    const hello = document.getElementById("hello");
+    const helloMsg = ` welcome back ${userName_storage}`;
+
+    const pageContent = document.getElementById("page-content");
+    const mainNav = document.getElementById("main-nav");
+    hello.innerHTML += helloMsg
+
+    if (userName_storage == null) {
+        loginPage.style.display = 'block';
+        pageContent.style.display = 'none';
+        mainNav.style.display = 'none';
+    } else {
+        loginPage.style.display = 'none';
+        pageContent.style.display = 'block';
+        mainNav.style.display = 'block';
+    }
+</script>

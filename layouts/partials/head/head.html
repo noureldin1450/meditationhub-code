@@ -1,16 +1,22 @@
 <meta charset="utf-8">
 <!----SEO---->
-<title> {{.Title}} </title>
-        <meta name="keywords" seo,seo,seo>
-        <meta name="description" content="Website content description for seo">
+<title> {{.Title}} {{.Params.dis}} </title>
+        <meta name="keywords" {{.Title}},Meditation>
+        <meta name="description" content="{{.Title}}{{.Params.dis}}">
         <link rel="shortcut icon" type="image/png" href="/imges/favicon/favicon.ico">
         <!--OG-->
         <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="website name">
-        <meta name="application-name" content="website name">
-        <meta property="og:title" content="website title" />
-        <meta property="og:description" content="website description" />
-        <meta property="og:image" content="/imges/favicon/favicon.ico" />
+        <meta property="og:site_name" content="meditationhub">
+        <meta name="application-name" content="meditationhub">
+        <meta property="og:title" content="{{.Title}}" />
+        <meta property="og:description" content="{{.Title}}{{.Params.dis}}" />
+        <meta property="og:image" content="
+        {{if .Params.thumbnail}}
+        {{.Params.thumbnail}}
+        {{ else }}
+        /imges/favicon/favicon.ico
+        {{end}}"
+         />
         <!----Adding Style---->
         <!----Responsive---->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +37,6 @@
         <meta name="msapplication-TileColor" content="#ea5e5e">
         <meta name="theme-color" content="#ea5e5e">
         
-        <script data-ad-client="ca-pub-7218629583173179" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         
 
 

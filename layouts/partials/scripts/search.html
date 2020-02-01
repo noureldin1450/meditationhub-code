@@ -1,0 +1,17 @@
+<script>
+    var emptystring = "";
+
+    function search() {
+        var path = "{{.Site.BaseURL}}sessions/";
+        var meditationTitle = document.getElementById("meditationTitle").value;
+        var meditationTitle = meditationTitle.replace(/\s/g, '-');
+        var meditationTitle = meditationTitle.toLowerCase();
+        var url = path + meditationTitle;
+        //window.open(path+moveName);
+        if (meditationTitle == emptystring) {
+            alert("Add some text to search");
+        } else {
+            window.location = url;
+        }
+    }
+</script>

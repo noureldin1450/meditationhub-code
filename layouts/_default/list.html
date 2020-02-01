@@ -40,14 +40,17 @@
                 </div>
             </div>
 
-            {{ partial "comp/paginator.html" .}}
-            {{ partial "comp/footer.html" . }}
         </div>
+
+        {{ partial "comp/paginator.html" .}}
+        {{ partial "comp/footer.html" . }}
     </div>
     </div>
 
     {{ partial "comp/main-nav" . }}
-    {{ partial "scripts/script.html" . }}
+
+    {{ partial "scripts/jquery.html" . }}
+    {{ partial "scripts/tracker-code.html" . }}
 
 </body>
 
