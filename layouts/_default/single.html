@@ -15,45 +15,51 @@
                 <div class="single">
                     <div class="container">
 
-                        <div class="top-nav">
+                        <div class="top-nav animated fadeIn ">
                             {{ partial "comp/back-btn" . }}
                             <h2>your session is ready</h2>
                         </div>
-                        
-                        <iframe src="https://www.youtube.com/embed/{{.Params.youtubeId}}"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
 
-                        <div class="tags">
-                            {{ range .Params.tags}}
-                                <a href="/tags/{{. | urlize}}/">#{{.}}</a>
-                            {{end}}
+                        <div class="video animated fadeIn delay-0-5">
+                            <iframe class="animated FadeIn delay-0-5" src="https://www.youtube.com/embed/{{.Params.youtubeId}}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         </div>
-                        
-                        <h1 class="title"> {{.Title}} </h1>
 
-                        <div class="author">
-                            <h3>
-                                Author:
-                                {{ range .Params.stars}}
-                                    <a href="/stars/{{. | urlize}}/">{{.}}</a>
+                        <div class="animated fadeIn delay-1">
+                            <div class="tags">
+                                {{ range .Params.tags}}
+                                    <a href="/tags/{{. | urlize}}/">#{{.}}</a>
                                 {{end}}
-                            </h3>
-
-
+                            </div>
+                            
+                            <h1 class="title"> {{.Title}} </h1>
+    
+                            <div class="author">
+                                <h3>
+                                    Author:
+                                    {{ range .Params.stars}}
+                                        <a href="/stars/{{. | urlize}}/">{{.}}</a>
+                                    {{end}}
+                                </h3>
+    
+    
+                            </div>
+                            
+                            <div class="dis">
+                                <p>
+                                    {{.Params.dis}}
+                                </p>
+                            </div>
                         </div>
-                        
-                        <div class="dis">
-                            <p>
-                                {{.Params.dis}}
-                            </p>
-                        </div>
+                       
                         
                     </div>
+                    {{ partial "comp/related-slider" . }}            
+
                 </div>
                 
-                {{ partial "comp/related-slider" . }}            
                 {{ partial "comp/footer.html" . }}
             </div>
         </div>
