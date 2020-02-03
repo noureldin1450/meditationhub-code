@@ -1,7 +1,6 @@
 baseURL = "https://meditationhub.ga/"
 languageCode = "en-us"
-title = "meditation app"
-
+title = "Meditation App"
 
 [taxonomies]
   tag = "tags"

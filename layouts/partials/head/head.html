@@ -9,7 +9,15 @@
         <meta property="og:site_name" content="meditationhub">
         <meta name="application-name" content="meditationhub">
         <meta property="og:title" content="{{.Title}}" />
-        <meta property="og:description" content="{{.Title}}{{.Params.dis}}" />
+        
+        <meta property="og:description" content="
+        {{if .Params.dis}}
+        {{.Params.dis}}
+        {{else}}
+        the best meditation app for relaxingthe mind and body
+        {{end}}
+        " />
+
         <meta property="og:image" content="
         {{if .Params.thumbnail}}
         {{.Params.thumbnail}}
