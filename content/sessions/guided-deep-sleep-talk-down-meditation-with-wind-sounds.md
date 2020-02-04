@@ -1,6 +1,6 @@
 ---
 title: GUIDED DEEP-SLEEP TALK-DOWN MEDITATION (With Wind Sounds)
-slug: GUIDED DEEP SLEEP TALK DOWN MEDITATION (With Wind Sounds)
+slug: GUIDED DEEP SLEEP TALK DOWN MEDITATION With Wind Sounds
 thumbnail: 'https://i.ytimg.com/vi/VK5ifNArr-w/hqdefault.jpg'
 time: '22:16'
 tags:
