@@ -3,8 +3,8 @@ title: >-
   Guided Mindfulness Meditation: In a Windy Forest (Without Music)
   (Sleep-Friendly Fade)
 slug: >-
-  Guided Mindfulness Meditation In a Windy Forest (Without Music) (Sleep
-  Friendly Fade)
+  Guided Mindfulness Meditation In a Windy Forest Without Music Sleep Friendly
+  Fade
 thumbnail: 'https://i.ytimg.com/vi/re_bUUITM5M/hqdefault.jpg'
 time: '15:30'
 tags:
