@@ -7,7 +7,6 @@ tags:
   - Start Your Day
   - Guided Meditation
   - 7 min
-  - test
 stars:
   - adriene
 youtubeId: k0PSUDvLi8E
