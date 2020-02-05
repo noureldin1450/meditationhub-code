@@ -17,10 +17,10 @@
             Website Start 
         -->
 
-        <!--- Demo content --->
-        <!--
+    <!--- Demo content --->
+    <!--
         -->
-        
+
     {{ partial "comp/login-page.html" . }}
 
     <div class="swiper-container body-scroller" id="page-content">
@@ -29,9 +29,63 @@
                 {{ partial "comp/top-nav.html" . }}
                 <div style="clear: both;"></div>
                 {{ partial "comp/header" . }}
-                {{ partial "comp/sessions-slider" . }}
 
-               {{ partial "comp/footer.html" . }} 
+                <section>
+                    <div class="sessions-slider animated fadeIn delay-1-5">
+                        <div class="container headding">
+                            <h2>
+                                New Sessions:
+                                <a href="{{.Site.BaseURL}}sessions">more</a>
+                            </h2>
+                        </div>
+                        <div class="swiper-wrapper">
+                            {{ with .Site.GetPage "sessions" }}
+                            {{ range .Pages | first 10 }}
+                                {{ partial "comp/sessions-slider" . }}
+                            {{end}}
+                            {{end}}
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="sessions-slider animated fadeIn delay-1-5">
+                        <div class="container headding">
+                            <h2>
+                                deep sleep Sessions:
+                                <a href="{{.Site.BaseURL}}tags/sleep">more</a>
+                            </h2>
+                        </div>
+                        <div class="swiper-wrapper">
+                            {{ with .Site.GetPage "tags/sleep" }}
+                            {{ range .Pages | first 10 }}
+                                {{ partial "comp/sessions-slider" . }}
+                            {{end}}
+                            {{end}}
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="sessions-slider animated fadeIn delay-1-5">
+                        <div class="container headding">
+                            <h2>
+                                10min Sessions:
+                                <a href="{{.Site.BaseURL}}tags/10-min">more</a>
+                            </h2>
+                        </div>
+                        <div class="swiper-wrapper">
+                            {{ with .Site.GetPage "tags/10-min" }}
+                            {{ range .Pages | first 10 }}
+                                {{ partial "comp/sessions-slider" . }}
+                            {{end}}
+                            {{end}}
+                        </div>
+                    </div>
+                </section>
+
+
+                {{ partial "comp/footer.html" . }}
             </div>
         </div>
     </div>

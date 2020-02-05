@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404</title>
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/404page.css">
 </head>
 <body>
-    <h1> were are you going bro <br> 404 </h1>   
+
+    <div class="erorrpage">
+        <div class="container">
+            <h1>
+                <span>.</span>
+                404
+                <span>.</span>
+            </h1>
+            
+            <h2>
+                looks like this page is missing dont worry we are working on it.
+        
+                <div class="btn">
+                    <a href="/home">go to home</a>
+                </div>
+            </h2>
+            
+
+            {{ partial "comp/footer.html" .}}
+        </div>
+    </div>
+
 </body>
 </html>

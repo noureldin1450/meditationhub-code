@@ -1,15 +1,32 @@
+
 .sessions-slider {
   width: 100%;
   height: 100%;
   margin-bottom: 1rem;
-
+  
   .headding {
+    text-transform: capitalize;
+
     h2 {
         font-family: $extrafont;
         color: $white-color;
         padding-top: 1rem;
         padding-bottom: .5rem;
         font-size: 1.4rem;
+        text-align: left;
+        width: 100%;
+
+        a{
+          font-family: $mainfont;
+          color: $white-color;
+          float: right;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          font-size: 1rem;
+          font-weight: 300;
+          padding-top: .2rem;
+          text-decoration-color: $red-color;
+        }
     }
   }
 
