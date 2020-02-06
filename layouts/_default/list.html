@@ -20,7 +20,7 @@
 
                     <section>
                         <ul class="paginate-list">
-                            {{ range .Paginator.Pages}}
+                            {{ range .Paginator.Pages |  shuffle }}
                             <li>
                                 <a href="{{.URL}}">
                                     <div class="session-bg" style="background-image: url({{.Params.thumbnail}});">

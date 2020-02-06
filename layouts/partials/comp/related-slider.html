@@ -8,7 +8,7 @@
         </div>
     
         <div class="swiper-wrapper">
-            {{ $related:= .Site.RegularPages.Related . | first 5 }}
+            {{ $related:= .Site.RegularPages.Related . | first 5 | shuffle }}
             {{ with $related }}
                 {{ range .}}
                     <div class="swiper-slide">
