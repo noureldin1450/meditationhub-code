@@ -91,14 +91,49 @@
             text-align: center;
         }
 
+        .images{
+            padding: 1rem 0px;
+            li{
+                list-style: none;
+                display: inline-block;
+                width: 25%;
+                padding-right: 1.5rem;
+
+                &:last-child{
+                    padding: 0px;
+                }
+
+                @include laptop{
+                    width: 30%;
+                }
+                @include mobile{
+                    display: block;
+                    width: 50%;
+                    text-align: center;
+                    margin: auto;
+
+                    img{
+                        border-radius: 30px;
+                    }
+                }
+                @include small-mobile{
+                    width: 70%;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
         h2{
             @include laptop{
                 text-align: center;
             }
         }
 
-        ul{
-            padding: 1rem 1.2rem;
+        .steps{
+            padding: 0rem 0rem 1rem 1.2px;
             width: 80%;
             
             @include laptop{
