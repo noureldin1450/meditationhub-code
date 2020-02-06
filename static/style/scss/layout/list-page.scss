@@ -30,8 +30,29 @@
 @import "../comp/footer";
 
 .list-page {
-    @import '../comp/headding';
+  @import "../comp/headding";
 }
+
+.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  .page-item{
+    display: inline-block;
+    background: $red-color;
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    opacity: .8;
+    cursor: pointer;
+  }
+
+  .active{
+    opacity: 1;
+    border: 2px solid $white-color;
+  }
+}
+
 .paginate-list {
   text-align: center;
 
@@ -70,4 +91,8 @@
       }
     }
   }
+}
+
+.list-page .top-nav img{
+  left: auto !important;
 }

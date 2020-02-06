@@ -30,8 +30,6 @@
                 <div style="clear: both;"></div>
                 {{ partial "comp/header" . }}
                 
-                <a href="/404.html">404 حشلث مهىن</a>
-
                 <section>
                     <div class="sessions-slider animated fadeIn delay-1-5">
                         <div class="container headding">
@@ -42,7 +40,7 @@
                         </div>
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "sessions" }}
-                            {{ range .Pages | first 10 }}
+                            {{ range .Pages | first 10 | shuffle }}
                                 {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
