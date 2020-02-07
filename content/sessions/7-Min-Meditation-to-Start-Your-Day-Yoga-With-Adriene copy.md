@@ -6,7 +6,7 @@ time: '7:20'
 tags:
   - Start Your Day
   - Guided Meditation
-  - 7 min
+  - 7min
 stars:
   - adriene
 youtubeId: k0PSUDvLi8E
