@@ -18,11 +18,11 @@ collections:
       
       - {label: "slug", name: "slug", widget: "string"}
       
-      - {label: "thumbnail", name: "thumbnail", widget: "string"}
+      #- {label: "thumbnail", name: "thumbnail", widget: "string"}
 
       - {label: "time", name: "time", widget: "string"}
 
-      - {label: "tags", name: "tags", widget: "list", default: ["Guided Meditation"]}
+      - {label: "tags", name: "tags", widget: "list", default: ["Guided Meditation","min"]}
 
       - {label: "stars", name: "stars", widget: "list"}
 

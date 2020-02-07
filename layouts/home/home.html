@@ -71,11 +71,11 @@
                         <div class="container headding">
                             <h2>
                                 10min Sessions:
-                                <a href="{{.Site.BaseURL}}tags/10-min">more</a>
+                                <a href="{{.Site.BaseURL}}tags/10min">more</a>
                             </h2>
                         </div>
                         <div class="swiper-wrapper">
-                            {{ with .Site.GetPage "tags/10-min" }}
+                            {{ with .Site.GetPage "tags/10min" }}
                             {{ range .Pages | first 10 | shuffle }}
                                 {{ partial "comp/sessions-slider" . }}
                             {{end}}
