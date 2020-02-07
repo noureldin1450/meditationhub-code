@@ -11,6 +11,7 @@ tags:
   - Guided Meditation
   - Hypnosis
   - Sleep
+  - 40min
 stars:
   - Michael Sealey
 youtubeId: wNfyu2yV4l4
