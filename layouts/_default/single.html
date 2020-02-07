@@ -77,11 +77,16 @@
                         </div>
 
                     </section>
-
+                    <!-- the disqus comments system -->
+                    <div class="container">
+                        <div id="disqus_thread"></div>
+                    </div>
 
             </div>
 
             {{ partial "comp/footer.html" . }}
+
+            
         </div>
     </div>
     </div>
@@ -98,6 +103,8 @@
 
     {{ partial "scripts/swiper.html" . }}
     {{ partial "scripts/sessions-slider.html" . }}
+
+    {{ partial "scripts/comments.html" . }}
 
 </body>
 
