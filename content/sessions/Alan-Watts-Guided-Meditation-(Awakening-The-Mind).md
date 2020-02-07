@@ -5,7 +5,7 @@ thumbnail: 'https://i.ytimg.com/vi/jPpUNAFHgxM/hqdefault.jpg'
 time: '14:45'
 tags:
   - Guided Meditation
-  - 15 min
+  - 15min
 stars:
   - Alan Watts
 youtubeId: jPpUNAFHgxM
