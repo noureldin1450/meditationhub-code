@@ -13,6 +13,7 @@ tags:
   - Happiness
   - Health
   - Positive
+  - 10min
 stars:
   - Michael Sealey
 youtubeId: eCrZ5R4yPns
