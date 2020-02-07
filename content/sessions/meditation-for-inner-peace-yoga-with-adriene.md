@@ -6,7 +6,7 @@ time: '11:28'
 tags:
   - Guided Meditation
   - Inner Peace
-  - 10 min
+  - 10min
 stars:
   - Adriene
 youtubeId: d4S4twjeWTs
