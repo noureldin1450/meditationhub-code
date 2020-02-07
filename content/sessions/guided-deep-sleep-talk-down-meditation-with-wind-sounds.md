@@ -6,7 +6,7 @@ time: '22:16'
 tags:
   - Guided Meditation
   - Sleep
-  - 20 min
+  - 20min
 stars:
   - The Honest Guys
 youtubeId: VK5ifNArr-w
