@@ -12,7 +12,7 @@
         <div class="swiper-wrapper" style="height: auto;">
             <div class="swiper-slide" style="height: auto;">
 
-                <div class="single">
+                <section class="single">
                     <div class="container">
 
                         <div class="top-nav animated fadeIn ">
@@ -35,7 +35,7 @@
                             </div>
 
                             <h1 class="title"> {{.Title}} </h1>
-                            
+
                             <div class="author">
                                 <h3>
                                     Author:
@@ -57,13 +57,33 @@
 
 
                     </div>
-                    {{ partial "comp/related-slider" . }}
+                    <!-- Swiper -->
+                    <section>
 
-                </div>
+                        <div class="sessions-slider animated fadeIn delay-1-5">
 
-                {{ partial "comp/footer.html" . }}
+                            <div class="container headding">
+                                <h2>Recommended For You:</h2>
+                            </div>
+
+                            <div class="swiper-wrapper">
+                                {{ $related:= .Site.RegularPages.Related . | first 5 | shuffle }}
+                                {{ with $related }}
+                                {{ range .}}
+                                    {{partial "comp/sessions-slider" .}}
+                                {{end}}
+                                {{end}}
+                            </div>
+                        </div>
+
+                    </section>
+
+
             </div>
+
+            {{ partial "comp/footer.html" . }}
         </div>
+    </div>
     </div>
 
     {{ partial "comp/main-nav" . }}
