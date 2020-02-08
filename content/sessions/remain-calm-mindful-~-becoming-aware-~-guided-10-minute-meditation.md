@@ -1,6 +1,6 @@
 ---
 title: Remain Calm & Mindful ~ Becoming Aware ~ Guided 10 Minute Meditation
-slug: Remain Calm & Mindful Becoming Aware Guided 10 Minute Meditation
+slug: Remain Calm Mindful Becoming Aware Guided 10 Minute Meditation
 time: '10:09'
 tags:
   - Guided Meditation
