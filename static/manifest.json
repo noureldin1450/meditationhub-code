@@ -7,6 +7,11 @@
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/home",
+    "intent_filters": {
+    "scope_url_scheme": "https",
+    "scope_url_host": "meditationhub.ga",
+    "scope_url_path": "/"
+  },
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
