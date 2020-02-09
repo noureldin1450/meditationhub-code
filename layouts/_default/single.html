@@ -45,47 +45,45 @@
                                 </h3>
                             </div>
 
-
-
-
                             <div class="dis">
                                 <p>
                                     {{.Params.dis}}
                                 </p>
                             </div>
+                            {{ partial "comp/report.html" . }}
                         </div>
 
-
                     </div>
-                    <!-- Swiper -->
-                    <section>
+                </section>
+                <!-- Swiper -->
+                <section>
 
-                        <div class="sessions-slider animated fadeIn delay-1-5">
+                    <div class="sessions-slider animated fadeIn delay-1-5">
 
-                            <div class="container headding">
-                                <h2>Recommended For You:</h2>
-                            </div>
-
-                            <div class="swiper-wrapper">
-                                {{ $related:= .Site.RegularPages.Related . | first 5 | shuffle }}
-                                {{ with $related }}
-                                {{ range .}}
-                                    {{partial "comp/sessions-slider" .}}
-                                {{end}}
-                                {{end}}
-                            </div>
+                        <div class="container headding">
+                            <h2>Recommended For You:</h2>
                         </div>
 
-                    </section>
-                    <!-- the disqus comments system -->
-                    <div class="container">
-                        <div id="disqus_thread"></div>
+                        <div class="swiper-wrapper">
+                            {{ $related:= .Site.RegularPages.Related . | first 5 | shuffle }}
+                            {{ with $related }}
+                            {{ range .}}
+                            {{partial "comp/sessions-slider" .}}
+                            {{end}}
+                            {{end}}
+                        </div>
                     </div>
 
-                    {{ partial "comp/footer.html" . }}            
+                </section>
+                <!-- the disqus comments system -->
+                <div class="container">
+                    <div id="disqus_thread"></div>
+                </div>
+
+                {{ partial "comp/footer.html" . }}
             </div>
 
-        </div>
+    </div>
     </div>
     </div>
 
