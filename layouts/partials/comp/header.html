@@ -4,11 +4,10 @@
 
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                {{ with .Site.GetPage "/stars/adriene" }}
-                    {{range .Pages | first 3 }}
+                {{ with .Site.GetPage "/stars/adriene"}}
+                    {{range .Pages | first 3 | shuffle }}
                     <div class="swiper-slide">
-
-                        <div class="header-bg" style="background-image: url({{.Params.thumbnail}});">
+                        <div class="header-bg" style="background-image: url(https://i.ytimg.com/vi/{{.Params.youtubeId}}/mqdefault.jpg);">
                             <div class="overlay">
                               <a href="{{.URL}}"><img src="{{.Site.BaseURL}}imges/play.png" alt="play"></a>
                             </div>

@@ -40,7 +40,7 @@
                         </div>
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "sessions" }}
-                            {{ range .Pages | first 10 | shuffle }}
+                            {{ range .Pages | first 5 | shuffle }}
                                 {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
@@ -58,7 +58,7 @@
                         </div>
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "tags/sleep" }}
-                            {{ range .Pages | first 10 | shuffle }}
+                            {{ range .Pages | first 5 | shuffle }}
                                 {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
@@ -76,7 +76,7 @@
                         </div>
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "tags/10min" }}
-                            {{ range .Pages | first 10 | shuffle }}
+                            {{ range .Pages | first 5 | shuffle }}
                                 {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
