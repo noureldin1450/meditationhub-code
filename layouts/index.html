@@ -11,43 +11,23 @@
     <div class="indexpage">
         <header style="background-image: url({{.Site.BaseURL}}imges/header.svg);">
             <div class="container">
+
                 <div class="content">
+
                     <img src="{{.Site.BaseURL}}imges/logo/small-logo.svg" alt="logo">
-                    <h1 style="text-transform: capitalize;">The best meditation app for relaxing <br> the mind and body</h1>
-                    <div class="btn">
-                        <a href="#install">Download now</a>
-                    </div>
+                    <h1 style="text-transform: capitalize;">The best meditation app for relaxing mind <br> and body</h1>
+
+                    <form name="contact" method="POST" data-netlify="true" action="/download">
+                        
+                        <p>Email: <p/>
+                        <input required type="email" name="email" placeholder="Your Email Here" />
+                        <div class="btn">
+                            <button type="submit">DOWNLOAD NOW (it's free)</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </header>
-
-
-        <div id="install" class="install">
-            <div class="container">
-                <h2>Installation Instructions</h2>
-
-                <ul class="images">
-                    <li>
-                        <img src="/imges/page-1.png">
-                    </li>
-                    <li>
-                        <img src="/imges/page-2.png">
-                    </li>
-                    <li>
-                        <img src="/imges/page-3.png">
-                    </li>
-                </ul>
-
-                <ul class="steps">
-                    <li>Load meditationhub.ga in the Chrome Web Browser.</li>
-                    <li>Tap the 3 dots from the top right corner.</li>
-                    <li>Select "Add to Home screen" from the available options.</li>
-                    <li>Chrome will open a prompt and you will be able to add Meditation app icon to your home screen.
-                        Launch the app once to ensure the install completes successfully.</li>
-                </ul>
-
-            </div>
-        </div>
     </div>
 
     {{ partial "scripts/global.html" . }}
