@@ -70,46 +70,59 @@
           font-size: 1.4rem;
         }
       }
-      
-      form {
-          input,button{
-              border-radius: 4px;
-              border: none;
-              background: none;
-            }
-          input{
-            width: 32%; 
-            padding: .2rem .4rem;   
-            background: $white-color;
-            font-family: $mainfont;
 
-            @include mobile{
-                width: 40%;
-            }
-            @include small-mobile{
-                width: 60%;
-            }
+      form{
+        padding-top: 2rem;
+        span{
+          font-size: .8rem;
+          color: $white-color;
+          opacity: .9;
+          text-transform: capitalize;
         }
-        .btn {
-            margin-top: .4rem;    
-          button {
-            padding: 0.4rem 1.3rem;
-            border-radius: 4px;
-            background: $red-color;
-            font-weight: 900;
-            color: $white-color;
-            box-shadow: 0px 0px 20px $red-color;
-            font-size: 1rem;
-            cursor: pointer;
-            font-family: $mainfont;
-            
-            @include tap {
-              font-size: 0.8rem;
-            }
+        .btn{
+          button{
+            padding: .1rem .7rem;
+            box-shadow: none;
           }
         }
       }
+      input,
+      button {
+        border-radius: 4px;
+        border: none;
+        background: none;
+      }
+      input {
+        width: 32%;
+        padding: 0.2rem 0.4rem;
+        background: $white-color;
+        font-family: $mainfont;
 
+        @include mobile {
+          width: 40%;
+        }
+        @include small-mobile {
+          width: 60%;
+        }
+      }
+      .btn {
+        margin-top: 0.4rem;
+        button {
+          padding: 0.4rem 1.3rem;
+          border-radius: 4px;
+          background: $red-color;
+          font-weight: 900;
+          color: $white-color;
+          box-shadow: 0px 0px 20px $red-color;
+          font-size: 1rem;
+          cursor: pointer;
+          font-family: $mainfont;
+
+          @include tap {
+            font-size: 0.8rem;
+          }
+        }
+      }
     }
   }
 

@@ -17,14 +17,19 @@
                     <img src="{{.Site.BaseURL}}imges/logo/small-logo.svg" alt="logo">
                     <h1 style="text-transform: capitalize;">The best meditation app for relaxing mind <br> and body</h1>
 
+                    <div class="btn">
+                        <button><a href="/download">DOWNLOAD NOW (it's free)</a></button>
+                    </div>
+
                     <form name="email" method="POST" data-netlify="true" action="/download">
-                        
-                        <p>Email: <p/>
+                        <span>subscribe to meditationhub.ga newsletter for our new updates</span>
+                        <p>Email:</p>
                         <input required type="email" name="email" placeholder="Your Email Here" />
-                        <div class="btn">
-                            <button type="submit">DOWNLOAD NOW (it's free)</button>
-                        </div>
+                        <span class="btn">
+                            <button type="submit">Subscribe</button>
+                        </span>
                     </form>
+
                 </div>
             </div>
         </header>
