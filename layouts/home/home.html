@@ -5,10 +5,10 @@
     <!-- 
             the site head
         -->
-        {{ partial "head/head.html" . }}
-        
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-        <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/homepage.css">
+    {{ partial "head/head.html" . }}
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/homepage.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 {{ partial "comp/top-nav.html" . }}
                 <div style="clear: both;"></div>
                 {{ partial "comp/header" . }}
-                
+
                 <section>
                     <div class="sessions-slider animated fadeIn delay-1-5">
                         <div class="container headding">
@@ -41,7 +41,7 @@
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "sessions" }}
                             {{ range .Pages | first 5 | shuffle }}
-                                {{ partial "comp/sessions-slider" . }}
+                            {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
                         </div>
@@ -59,7 +59,7 @@
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "tags/sleep" }}
                             {{ range .Pages | first 5 | shuffle }}
-                                {{ partial "comp/sessions-slider" . }}
+                            {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
                         </div>
@@ -77,13 +77,20 @@
                         <div class="swiper-wrapper">
                             {{ with .Site.GetPage "tags/10min" }}
                             {{ range .Pages | first 5 | shuffle }}
-                                {{ partial "comp/sessions-slider" . }}
+                            {{ partial "comp/sessions-slider" . }}
                             {{end}}
                             {{end}}
                         </div>
                     </div>
                 </section>
 
+                <section class="tags container">
+                    {{ with .Site.GetPage "/tags"}}
+                    {{range .Pages | first 20 | shuffle}}
+                    <a href="{{.URL}}">#{{.Title}}<span>,</span></a>
+                    {{end}}
+                    {{end}}
+                </section>
 
                 {{ partial "comp/footer.html" . }}
             </div>
@@ -102,7 +109,6 @@
     {{ partial "scripts/swiper.html" . }}
     {{ partial "scripts/header-slider.html" . }}
     {{ partial "scripts/sessions-slider.html" . }}
-
 
 </body>
 
