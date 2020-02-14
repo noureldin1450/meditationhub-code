@@ -1,0 +1,10 @@
+baseURL = "https://meditationhub.ga/"
+languageCode = "en-us"
+title = "Meditation App For Relaxing The Mind And Body"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  star = "stars"
+  
+Paginate = 20
