@@ -1,0 +1,103 @@
+/*
+            Made by : NOUR ELDIN CODE
+ 
+            ╔══╗ 
+            ╚╗╔╝
+            ╔╝╚(¯`v´¯)Coding 
+            ╚══ `.¸.´   THIS WEBSITE MADE BY LOVE ( ͡° ͜ʖ ͡°)
+*/
+
+//WEBSITE FILES IMPORT
+
+//global fonts
+@import "../global/fonts";
+//Var
+@import "../helpers/var";
+//Animations
+@import "../helpers/animation";
+//RESPONSIVE
+@import "../helpers/responsive";
+//RESET
+@import "../helpers/reset";
+
+/*
+    /////////////////////
+         Home page styles
+         /////////////////////
+         */
+@import "../comp/main-nav";
+@import "../comp/back-btn";
+@import "../comp/footer";
+
+.list-page {
+  @import "../comp/headding";
+  h2 {
+    font-size: 1rem !important;
+    padding-top: .4rem;
+  }
+}
+
+.pagination {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  .page-item{
+    display: inline-block;
+    background: $red-color;
+    padding: .2rem .5rem;
+    margin: 1rem .1rem;
+    border-radius: 5px;
+    opacity: .8;
+    cursor: pointer;
+  }
+
+  .active{
+    opacity: 1;
+    border: 2px solid $white-color;
+  }
+}
+
+.paginate-list {
+  text-align: center;
+
+  li {
+    padding: 1rem 0px;
+    width: 100%;
+    float: left;
+    margin: auto;
+    display: inline-block;
+
+    .session-bg {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+      border-radius: 8px;
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .time {
+          background: $red-color;
+          color: $white-color;
+          border-radius: 4px;
+          text-align: center;
+          padding: 0rem 0.3rem;
+          margin: 0.4rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.list-page .top-nav img{
+  left: auto !important;
+}

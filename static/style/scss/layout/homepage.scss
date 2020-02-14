@@ -35,11 +35,12 @@
 .tags{
     text-align: center;
     padding: 1rem 0px;
-
+    
     a{
         color: $red-color;
         text-decoration: underline;
         text-decoration-color: $red-color;
+        font-size: .8rem;
 
         &:nth-of-type(20){
             span{

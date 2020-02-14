@@ -1,0 +1,13 @@
+@import '../helpers/responsive';
+
+.back-btn{
+  img {
+    width: 7%;
+    float: left;
+    padding-top: .4rem;
+
+    @include small-mobile {
+      width: 9%;
+    }
+  }
+}
