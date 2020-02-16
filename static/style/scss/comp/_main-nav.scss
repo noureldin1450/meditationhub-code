@@ -1,11 +1,14 @@
 .body-scroller {
   height: 87.9vh;
   overflow-y: auto;
+  max-width: 700px;
+  margin: auto;
 }
 
 .main-nav {
   color: white;
   width: 100%;
+  max-width: 700px;
   margin: auto;
   z-index: 3;
   position: absolute;
