@@ -1,12 +1,11 @@
 ---
 title: Home - Day 1 - Recognize | 30 Days of Yoga With Adriene
 slug: Home Day 1 Recognize 30 Days of Yoga With Adriene
-thumbnail: 'https://i.ytimg.com/vi/--jhKVdZOJM/hqdefault.jpg'
 time: '43:10'
 tags:
   - Guided Meditation
   - Recognize
-  - 40 min
+  - 40min
 stars:
   - Adriene
 youtubeId: '--jhKVdZOJM'
