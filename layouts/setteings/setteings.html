@@ -16,39 +16,52 @@
                     <div class="setteings animated fadeIn">
                         <div class="top-nav">
                             {{ partial "comp/back-btn.html" . }}
-                            <h2> Settings  </h2>
+                            <h2> Setteings </h2>
                         </div>
                         <ul>
 
                             <li class="changeName">
-                                <button onclick="localStorage.clear();window.location.href = '/home';">Change Your Name <img src="/imges/edit.svg"></button >
+                                <button onclick="localStorage.clear();window.location.href = '/home';">Change Your Name
+                                    <img src="/imges/edit.svg"></button>
                             </li>
 
                             <li>
-                                <h3>About me</h3>
                                 <p>
-                                    hi am NourEldin a web designer and developer from egypt 
+                                    Dear <span id="userName" class="red"></span>,
+                                    <br>
+                                    I really appreciate the time you spent inside meditationhub.ga you motivate me to do
+                                    more. Thank you.
+                                    <br>
+                                    best regards, <span class="red">NourEldin</span>
                                 </p>
                             </li>
 
-                            <li>
-                                <p>if your a creator want to join us | or you want us to remove your sesstions from our app send us a message</p>
+
+                            <li class="donate">
+                                <p>will you make a small <span class="red">$3 gift</span> today?</p>
+                                <div class="coffe">
+                                    <a href="https://www.buymeacoffee.com/yuvNMQfC7" target="_blank">
+                                        <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg">
+                                        <span>buy me a coffee</span>
+                                    </a>
+                                </div>
                             </li>
+
 
                             <li>
                                 <h3>contact info</h3>
                                 <p>
-                                    lolhack2017@gmail.com 
+                                    lolhack2017@gmail.com
                                 </p>
                             </li>
 
-                            <li class="coffe">
-                                <a href="https://www.buymeacoffee.com/yuvNMQfC7" target="_blank">
-                                    <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg">
-                                    <span>buy me a coffee</span>
-                                </a>
+                            <li>
+                                <h3>About me</h3>
+                                <p style="font-size: .7rem;">
+                                    hi am NourEldin a web designer and developer from egypt
+                                    if your a creator want to join us | or you want us to remove your sesstions from our
+                                    app send us a message</p>
                             </li>
-
 
                         </ul>
 
@@ -63,6 +76,12 @@
     {{ partial "comp/main-nav" . }}
 
     {{ partial "scripts/global.html" . }}
+
+    <script>
+        const userName_storage = localStorage.getItem("userName");
+        document.getElementById('userName').innerHTML = userName_storage;
+
+    </script>
 
     {{ partial "scripts/swiper.html" . }}
 

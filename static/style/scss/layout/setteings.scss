@@ -38,9 +38,17 @@
     }
 }
 
+.setteings .top-nav {
+  padding: 2rem 0px 0rem 0px !important;
+}
+
 .setteings {
   @import "../comp/headding";
   text-align: center;
+
+  .red{
+    color: $red-color;
+  }
 
   ul {
     padding: 1rem 0px;
@@ -81,45 +89,54 @@
     }
   }
 
-  .coffe {
-    margin: auto;
-    color: $white-color;
-    width: 40%;
-    padding: 0rem 1rem;
-    border: 4px solid $red-color;
-    border-radius: 2px;
-    box-shadow: 0px 0px 20px $red-color;
-    transition: .2s;
-    background: $red-color;
-
-    &:hover {
+  .donate{
+    p{
+      padding-bottom: .5rem;
+    }
+    
+    .coffe {
+      margin: auto;
+      color: $white-color;
+      width: 40%;
+      padding: 0rem 1rem;
+      border: 2px solid $white-color;
+      border-radius: 2px;
+      //box-shadow: 0px 0px 20px $red-color;
       transition: .2s;
-      padding: 0rem 1.3rem;
-    }
-    @include small-mobile{
-      width: 50%;
-    }
-    a {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-    }
-    span{
-      width: 100%;
-      @include mobile{
-        font-size: .9rem;
+      background: $red-color;
+  
+      &:hover {
+        transition: .2s;
+        padding: 0rem 1.3rem;
       }
-    }
-    img {
-      width: 15%;
-      padding: 0.2rem 2rem 0.2rem 0px;
-      
       @include small-mobile{
-        padding: 0.2rem 1rem 0.2rem 0px;
-        width: 10%;
+        width: 50%;
       }
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+      span{
+        width: 100%;
+        font-size: .9rem;
+        @include mobile{
+          font-size: .8rem;
+        }
+      }
+
+      img {
+        width: 13%;
+        padding: 0.2rem 2rem 0.2rem 0px;
+        
+        @include small-mobile{
+          padding: 0.2rem 1rem 0.2rem 0px;
+          width: 10%;
+        }
+      }
+      
     }
   }
 }
