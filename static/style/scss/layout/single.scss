@@ -64,6 +64,20 @@
     padding-bottom: 1rem;
   }
 
+  .views{
+    display: block;
+    p,span{
+      color: $white-color;
+      font-size: .9rem;
+      opacity: .7;
+      display: inline-block;
+    }
+
+    #visits{
+      padding-right: .3rem;
+    }
+  }
+
   .author {
     h3 {
       text-transform: capitalize;

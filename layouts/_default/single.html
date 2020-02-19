@@ -34,9 +34,14 @@
                                 {{end}}
                             </div>
 
+
                             <h1 class="title"> {{.Title}} </h1>
+
+
                             {{if not ( in (.Site.BaseURL | string) "localhost" )}}
-                                <p id="visits"></p>
+                            <div class="views">
+                                <p id="visits">52</p><span> views</span>
+                            </div>
                             {{end}}
 
                             <div class="author">
@@ -98,7 +103,7 @@
 
     {{ partial "scripts/global.html" .}}
     {{if not ( in (.Site.BaseURL | string) "localhost" )}}
-        {{ partial "scripts/counter.html" .}}
+    {{ partial "scripts/counter.html" .}}
     {{end}}
     {{ partial "scripts/swiper.html" . }}
     {{ partial "scripts/sessions-slider.html" . }}
