@@ -7,6 +7,7 @@
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/home",
+  "description": "the best meditation app for relaxing mind and body",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
