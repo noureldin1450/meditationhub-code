@@ -1,6 +1,6 @@
 
 .login-page{
-    width: 100%;
+    max-width: 700px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -9,6 +9,8 @@
     text-align: center;
     background-color: $black-color;
     display: none;
+    margin: auto;
+    padding: 0rem 0px 1rem 0px;
 
     .logo{
         width: 70%;
