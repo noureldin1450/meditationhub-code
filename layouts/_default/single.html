@@ -35,6 +35,9 @@
                             </div>
 
                             <h1 class="title"> {{.Title}} </h1>
+                            {{if not ( in (.Site.BaseURL | string) "localhost" )}}
+                                <p id="visits"></p>
+                            {{end}}
 
                             <div class="author">
                                 <h3>
@@ -50,7 +53,7 @@
                                     {{.Params.dis}}
                                 </p>
                             </div>
-                            
+
                             {{ partial "comp/report.html" . }}
                         </div>
 
@@ -84,7 +87,7 @@
                 {{ partial "comp/footer.html" . }}
             </div>
 
-    </div>
+        </div>
     </div>
     </div>
 
@@ -94,9 +97,13 @@
         -->
 
     {{ partial "scripts/global.html" .}}
+    {{if not ( in (.Site.BaseURL | string) "localhost" )}}
+        {{ partial "scripts/counter.html" .}}
+    {{end}}
     {{ partial "scripts/swiper.html" . }}
     {{ partial "scripts/sessions-slider.html" . }}
     {{ partial "scripts/comments.html" . }}
 
 </body>
+
 </html>
