@@ -22,12 +22,16 @@
         
 /*
     /////////////////////
-         Home page styles
+         footer page styles
     /////////////////////
 */
+@import '../comp/footer';
 @import '../comp/main-nav';
 @import '../comp/back-btn';
 
+footer{
+    padding-top: 1rem;
+}
 .main-nav{
     li{
         opacity: .7 !important;
