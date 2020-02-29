@@ -1,5 +1,5 @@
     <script>
-        $.getJSON("https://api.countapi.xyz/hit/meditationhub.ga/{{.Params.youtubeId}}", function (response) {
+        $.getJSON("https://api.countapi.xyz/hit/{{.Site.BaseURL}}/{{.Params.youtubeId}}", function (response) {
             $("#visits").text(response.value);
         });
     </script>

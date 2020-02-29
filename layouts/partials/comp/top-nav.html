@@ -3,16 +3,17 @@
         <h2 class="hello animated fadeIn" id="hello"></h2>
         <div class="search animated fadeIn delay-0-5">
 
-            <input id="meditationTitle" list="meditation-title" name="search" type="text" placeholder="Search By Session Title..">
+            <input id="meditationTitle" list="meditation-title" name="search" type="text"
+                placeholder="Search By Session Title..">
 
             <button onclick="search()"><img src="{{.Site.BaseURL}}imges/search.svg"></button>
 
             <datalist id="meditation-title">
                 {{ with .Site.GetPage "/sessions"}}
-                    {{ range .Pages }}
-                        <option value="{{.Params.slug}}">
+                {{ range .Pages }}
+                <option value="{{.Params.slug}}">
                     {{end}}
-                {{end}}
+                    {{end}}
             </datalist>
 
         </div>
