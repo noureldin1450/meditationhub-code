@@ -28,8 +28,12 @@
 @import "../comp/main-nav";
 @import "../comp/session-slider";
 @import "../comp/back-btn";
+@import "../comp/ads";
 @import "../comp/footer";
 
+.ads{
+  margin: 1.1rem auto 0px auto;
+}
 .single {
 
     @import '../comp/headding';

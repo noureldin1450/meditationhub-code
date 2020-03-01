@@ -28,6 +28,11 @@
 @import '../comp/footer';
 @import '../comp/main-nav';
 @import '../comp/back-btn';
+@import '../comp/ads';
+
+.ads{
+    margin: 1rem auto 0px auto;
+}
 
 footer{
     padding-top: 1rem;
