@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{ partial "head/head.html" . }}
+    <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/howto.css">
+</head>
+
+<body>
+
+    <div class="swiper-container body-scroller">
+        <div class="swiper-wrapper" style="height: auto;">
+            <div class="swiper-slide" style="height: auto;">
+
+                <div class="howto">
+ 
+                    <div class="container">
+
+                        <div class="top-nav">
+                            {{ partial "comp/back-btn.html" . }}
+                            <h2> learn how to meditate </h2>
+                        </div>
+                    </div>
+
+
+                    <div style="clear: both;"></div>
+
+                    <section>
+                        <div class="container">
+                            {{with .Site.GetPage "/howto"}}
+                                {{range .Pages}}
+                                <iframe  src="https://www.youtube.com/embed/{{.Params.youtubeId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                {{end}}
+                            {{end}}
+
+                        </div>
+                    </section>
+
+                    
+                </div>
+
+
+
+                    {{ partial "comp/footer.html" . }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{ partial "comp/main-nav" . }}
+
+    {{ partial "scripts/global.html" . }}
+    {{ partial "scripts/swiper.html" . }}
+
+</body>
+
+</html>
