@@ -84,6 +84,8 @@
                     </div>
                 </section>
 
+                {{ partial "comp/ads.html" . }}
+
                 <section class="tags container">
                     {{ with .Site.GetPage "/tags"}}
                     {{range .Pages | first 20 | shuffle}}
@@ -91,8 +93,6 @@
                     {{end}}
                     {{end}}
                 </section>
-
-                {{ partial "comp/ads.html" . }}
 
                 {{ partial "comp/footer.html" . }}
             </div>
