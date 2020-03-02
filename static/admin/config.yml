@@ -30,7 +30,6 @@ collections:
 
       - {label: "dis", name: "dis", widget: "text"}
 
-collections:
   - name: "howto" # Used in routes, e.g., /admin/collections/blog
     label: "how to" # Used in the UI
     folder: "content/howto" # The path to the folder where the documents are stored
