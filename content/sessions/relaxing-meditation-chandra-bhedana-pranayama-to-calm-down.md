@@ -4,7 +4,8 @@ slug: Relaxing Meditation Chandra Bhedana Pranayama to Calm Down
 time: '16:58'
 tags:
   - Guided Meditation
-  - 15minوCalm Down
+  - 15min
+  - Calm Down
   - Relax
 stars:
   - BrettLarkinYoga
