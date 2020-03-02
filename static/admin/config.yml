@@ -45,7 +45,7 @@ collections:
 
       - {label: "time", name: "time", widget: "string"}
 
-      - {label: "tags", name: "tags", widget: "list", default: ["Guided Meditation","min"]}
+      - {label: "tags", name: "tags", widget: "list", default: ["how to"]}
 
       - {label: "stars", name: "stars", widget: "list"}
 
