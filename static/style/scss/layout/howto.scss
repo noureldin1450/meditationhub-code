@@ -19,6 +19,8 @@
 */
 @import "../comp/main-nav";
 @import "../comp/back-btn";
+@import "../comp/session-slider";
+@import "../comp/ads";
 @import "../comp/footer";
 
 
@@ -37,14 +39,5 @@
 }
 .howto{
     @import "../comp/headding";
-    text-align: center;
 
-    section{
-        iframe{
-            width: 100%;
-            margin: 1rem auto;
-            border-radius: 5px;
-            height: 230px;
-        }
-    }
 }

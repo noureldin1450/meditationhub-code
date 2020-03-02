@@ -3,6 +3,8 @@
 
 <head>
     {{ partial "head/head.html" . }}
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}style/scss/layout/howto.css">
 </head>
 
@@ -13,12 +15,12 @@
             <div class="swiper-slide" style="height: auto;">
 
                 <div class="howto">
- 
+
                     <div class="container">
 
                         <div class="top-nav">
                             {{ partial "comp/back-btn.html" . }}
-                            <h2> learn how to meditate </h2>
+                            <h2> how to meditate </h2>
                         </div>
                     </div>
 
@@ -26,32 +28,39 @@
                     <div style="clear: both;"></div>
 
                     <section>
-                        <div class="container">
-                            {{with .Site.GetPage "/howto"}}
-                                {{range .Pages}}
-                                <iframe  src="https://www.youtube.com/embed/{{.Params.youtubeId}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="sessions-slider animated fadeIn delay-1-5">
+                            <div class="container headding">
+                                <h2>
+                                    lets get started:
+                                </h2>
+                            </div>
+                            <div class="swiper-wrapper">
+                                {{ with .Site.GetPage "/howto" }}
+                                {{ range .Pages | first 10 | shuffle }}
+                                {{ partial "comp/sessions-slider" . }}
                                 {{end}}
-                            {{end}}
-
+                                {{end}}
+                            </div>
                         </div>
                     </section>
 
-                    
                 </div>
 
+                {{ partial "comp/ads.html" . }}
 
-
-                    {{ partial "comp/footer.html" . }}
-                </div>
-
+                {{ partial "comp/footer.html" . }}
             </div>
+
         </div>
+    </div>
     </div>
 
     {{ partial "comp/main-nav" . }}
 
     {{ partial "scripts/global.html" . }}
     {{ partial "scripts/swiper.html" . }}
+
+    {{ partial "scripts/sessions-slider.html" . }}
 
 </body>
 
