@@ -44,6 +44,24 @@
                         </div>
                     </section>
 
+                    <section>
+                        <div class="sessions-slider animated fadeIn delay-1-5">
+                            <div class="container headding">
+                                <h2>
+                                    why to meditate:
+                                </h2>
+                            </div>
+                            <div class="swiper-wrapper">
+                                {{ with .Site.GetPage "/whyto" }}
+                                {{ range .Pages | first 10 | shuffle }}
+                                {{ partial "comp/sessions-slider" . }}
+                                {{end}}
+                                {{end}}
+                            </div>
+                        </div>
+                    </section>
+
+
                 </div>
 
                 {{ partial "comp/ads.html" . }}
