@@ -53,7 +53,7 @@
                             </div>
                             <div class="swiper-wrapper">
                                 {{ with .Site.GetPage "/whyto" }}
-                                {{ range .Pages | first 10 | shuffle }}
+                                {{ range .Pages | last 10 }}
                                 {{ partial "comp/sessions-slider" . }}
                                 {{end}}
                                 {{end}}
